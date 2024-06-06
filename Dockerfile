@@ -12,7 +12,7 @@ RUN apt-get update && \
 RUN mkdir -p /var/log
 
 # Create cron job file
-RUN echo "* * * * * root /usr/local/bin/speedtest.sh >> /var/log/cron.log 2>&1" > /etc/cron.d/speedtest-cron
+RUN echo "0 * * * * root /usr/local/bin/speedtest.sh >> /var/log/cron.log 2>&1" > /etc/cron.d/speedtest-cron
 
 # Give execution rights on the cron job
 RUN chmod 0644 /etc/cron.d/speedtest-cron
