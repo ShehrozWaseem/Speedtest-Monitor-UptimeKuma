@@ -7,6 +7,7 @@
 - Parses the JSON response to extract download and upload speeds, latency, and packet loss.
 - Converts the speeds to Mbps.
 - Sends the results to a specified server if the download speed is acceptable.
+- Path to file is : /usr/local/bin/speedtest.sh
 
 ### Docker Instructions
 1. **Create the Dockerfile**: Use the provided Dockerfile to set up the environment.
